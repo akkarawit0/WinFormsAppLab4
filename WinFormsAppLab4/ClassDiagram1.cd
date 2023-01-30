@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WinFormsAppLab4.Person">
-    <Position X="2.25" Y="0.75" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAEAAAAAAQAAAAAAAAAAAAAAEAAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AIAAAEAAAAAAQAAAAAAAAAAAAAAEAAAAAAgEAAAIAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WinFormsAppLab4.Classroow">
-    <Position X="4" Y="0.75" Width="1.5" />
+  <Class Name="WinFormsAppLab4.Form1">
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>JAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Classroow.cs</FileName>
+      <HashCode>EAAAIIAAACAEABgACACCgAIKBAAIAAAAAEQACAAACAA=</HashCode>
+      <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WinFormsAppLab4.Form1" Collapsed="true">
-    <Position X="5.75" Y="0.75" Width="1.5" />
+  <Class Name="WinFormsAppLab4.Classroow">
+    <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAIAAACAEABgACACiAQIKBAAIAAAAAEAAKAAAAAA=</HashCode>
-      <FileName>Form1.cs</FileName>
+      <HashCode>JAEAAAAAAAAAAAAAACAAAAAgAAAEACAIAQAABAAAAAA=</HashCode>
+      <FileName>Classroow.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

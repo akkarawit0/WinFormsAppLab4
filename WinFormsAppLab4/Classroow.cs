@@ -32,11 +32,113 @@ namespace WinFormsAppLab4
             }
             return "";
         }
-         public string ShowMaxGPA()
+
+
+        public string SumYear()
         {
+            int year = 0;
+            foreach (Person y in persons)
+            {
+                int currentAge = year;
+                int newTotalAge = currentAge + y.getAge();
+                year = newTotalAge;
+            }
+            return year.ToString();
 
         }
-    }
+            public string avgMaxGPA()
+        {
+            double GPA = 0;
+            int cout = 0;
+            foreach (Person p in this.persons)
+            {
+                GPA += p.getGPA();
+                cout++;
+            }
+            double GpaAvg = GPA / cout;
+            return GpaAvg.ToString();
 
-     
+        }
+        public string MaxGPA()
+        {
+            double GPA = 0;
+            int count = 0;
+            double GpaMax = 0;
+            string name = "";
+            foreach (Person p in persons)
+            {
+                double currentGPA = p.getGPA();
+                GPA += currentGPA;
+                count++;
+                if (currentGPA > GpaMax)
+                {
+                    GpaMax = currentGPA;
+                    name = p.getName();
+                }
+            }
+            return GpaMax.ToString();
+
+        }
+        public string MinGPA()
+        {
+            double GPA = 0;
+            int count = 0;
+            double GpaMin = double.MaxValue;
+            string name = "";
+            foreach (Person p in persons)
+            {
+                double currentGPA = p.getGPA();
+                GPA += currentGPA;
+                count++;
+                if (currentGPA < GpaMin)
+                {
+                    GpaMin = currentGPA;
+                    name = p.getName();
+                }
+            }
+            return GpaMin.ToString();
+        }
+
+        public string GpaminName()
+        {
+            double GPA = 0;
+            int count = 0;
+            double Gpamin = double.MaxValue;
+            string name = "";
+            foreach (Person p in persons)
+            {
+                double currentGPA =  p.getGPA();
+                GPA += currentGPA;
+                count++;
+                if (currentGPA < Gpamin)
+                {
+                    Gpamin = currentGPA;
+                    name = p.getName();
+                }
+            }
+            return name;
+
+        }
+        public string GpamaxName ()
+        {
+            double GPA = 0;
+            int count = 0;
+            double GpaMax = 0;
+            string name = "";
+            foreach (Person p in persons)
+            {
+                double currentGPA = p.getGPA();
+                GPA += currentGPA;
+                count++;
+                if (currentGPA > GpaMax)
+                {
+                    GpaMax = currentGPA;
+                    name = p.getName();
+                }
+            }
+            return name;
+        }
+    } 
+
+
 }

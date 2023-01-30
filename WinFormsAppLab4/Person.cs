@@ -11,16 +11,18 @@ namespace WinFormsAppLab4
         private string name;
         private int age;
         private int birthYear;
+        private double gpa;
 
 
 
 
-        public Person(string Name ,int bYear) 
+        public Person(string Name ,int bYear ,double GPA ) 
         { 
             this.name = Name;
             this.birthYear = bYear;
             this.age = 2565 - bYear;
-
+            gpa = GPA;
+           
         }
 
         public int getAge()
@@ -32,7 +34,11 @@ namespace WinFormsAppLab4
             return name;
         
         }
-
+        public double getGPA()
+        {
+            return gpa;
+        }
+       
 
     }
 }

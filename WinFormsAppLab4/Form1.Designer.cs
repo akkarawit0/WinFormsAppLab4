@@ -42,13 +42,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.GpaMax = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.GpaNim = new System.Windows.Forms.TextBox();
+            this.tbGpaNim = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.GpaAvg = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.NameMax = new System.Windows.Forms.TextBox();
+            this.NameGMax = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.NameNim = new System.Windows.Forms.TextBox();
+            this.NameGNim = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbName
@@ -101,6 +101,7 @@
             this.texName.Name = "texName";
             this.texName.Size = new System.Drawing.Size(138, 189);
             this.texName.TabIndex = 0;
+            this.texName.TextChanged += new System.EventHandler(this.texName_TextChanged);
             // 
             // label3
             // 
@@ -170,12 +171,12 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "GPA Min";
             // 
-            // GpaNim
+            // tbGpaNim
             // 
-            this.GpaNim.Location = new System.Drawing.Point(418, 58);
-            this.GpaNim.Name = "GpaNim";
-            this.GpaNim.Size = new System.Drawing.Size(138, 27);
-            this.GpaNim.TabIndex = 3;
+            this.tbGpaNim.Location = new System.Drawing.Point(418, 58);
+            this.tbGpaNim.Name = "tbGpaNim";
+            this.tbGpaNim.Size = new System.Drawing.Size(138, 27);
+            this.tbGpaNim.TabIndex = 3;
             // 
             // label8
             // 
@@ -198,32 +199,32 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(573, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 20);
+            this.label9.Size = new System.Drawing.Size(50, 20);
             this.label9.TabIndex = 2;
-            this.label9.Text = "ชื่อ";
+            this.label9.Text = "ชื่อมาก";
             // 
-            // NameMax
+            // NameGMax
             // 
-            this.NameMax.Location = new System.Drawing.Point(644, 28);
-            this.NameMax.Name = "NameMax";
-            this.NameMax.Size = new System.Drawing.Size(138, 27);
-            this.NameMax.TabIndex = 3;
+            this.NameGMax.Location = new System.Drawing.Point(644, 28);
+            this.NameGMax.Name = "NameGMax";
+            this.NameGMax.Size = new System.Drawing.Size(138, 27);
+            this.NameGMax.TabIndex = 3;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(573, 61);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 20);
+            this.label10.Size = new System.Drawing.Size(51, 20);
             this.label10.TabIndex = 2;
-            this.label10.Text = "ชื่อ";
+            this.label10.Text = "ชื่อน้อย";
             // 
-            // NameNim
+            // NameGNim
             // 
-            this.NameNim.Location = new System.Drawing.Point(644, 61);
-            this.NameNim.Name = "NameNim";
-            this.NameNim.Size = new System.Drawing.Size(138, 27);
-            this.NameNim.TabIndex = 3;
+            this.NameGNim.Location = new System.Drawing.Point(644, 61);
+            this.NameGNim.Name = "NameGNim";
+            this.NameGNim.Size = new System.Drawing.Size(138, 27);
+            this.NameGNim.TabIndex = 3;
             // 
             // Form1
             // 
@@ -232,10 +233,10 @@
             this.ClientSize = new System.Drawing.Size(851, 466);
             this.Controls.Add(this.GpaAvg);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.NameNim);
+            this.Controls.Add(this.NameGNim);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.GpaNim);
-            this.Controls.Add(this.NameMax);
+            this.Controls.Add(this.tbGpaNim);
+            this.Controls.Add(this.NameGMax);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.GpaMax);
@@ -274,12 +275,12 @@
         private Label label6;
         private TextBox GpaMax;
         private Label label7;
-        private TextBox GpaNim;
+        private TextBox tbGpaNim;
         private Label label8;
         private TextBox GpaAvg;
         private Label label9;
-        private TextBox NameMax;
+        private TextBox NameGMax;
         private Label label10;
-        private TextBox NameNim;
+        private TextBox NameGNim;
     }
 }
