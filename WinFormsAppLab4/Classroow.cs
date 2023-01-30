@@ -25,12 +25,12 @@ namespace WinFormsAppLab4
 
         public string showAllPersoninClass()
         {
-            string result = "0";
+            string result = "";
             foreach (Person p in this.persons)
             {
-                result += p.getName + "\r\n";
+                result += p.getName() + "\r\n";
             }
-            return "";
+            return result;
         }
 
 

@@ -30,22 +30,18 @@
             this.classroow.addPerson2Class(person);
             this.texName.Text =
                   classroow.showAllPersoninClass();
-            //ปีเกิด
+
            // tbBirthYear.Text =
              //   classroow.SumYear();
-            //เฉลี่ยน
+            
             GpaAvg.Text =
                 classroow.avgMaxGPA();
-            //เกรดสูง
             GpaMax.Text =
                 classroow.MaxGPA();
-            //เกรดต่ำ
             tbGpaNim.Text =
                 classroow.MinGPA();
-            //ชื่อเกรดสูง
             NameGMax.Text =
                 classroow.GpamaxName();
-            //ชื่อเกรดต่ำ
             NameGNim.Text =
                 classroow.GpaminName();
 
